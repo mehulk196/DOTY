@@ -4,7 +4,7 @@ import { hasPartnerLogo } from "@/lib/logos";
 export default function PartnerLogo({
   name,
   logo,
-  className = "h-16 w-32",
+  className = "h-24 w-44",
 }: {
   name: string;
   logo: string;
@@ -19,15 +19,12 @@ export default function PartnerLogo({
   }
 
   return (
-    <div
-      className={`flex items-center justify-center rounded-xl border border-forest/10 bg-cream-dark/40 p-3 ${className}`}
-      title={name}
-    >
+    <div className={`flex items-center justify-center ${className}`} title={name}>
       <Image
         src={`/partners/${logo}`}
         alt={name}
-        width={160}
-        height={80}
+        width={280}
+        height={160}
         className="h-full w-full object-contain"
       />
     </div>

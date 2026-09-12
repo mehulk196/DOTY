@@ -12,7 +12,7 @@ export default function Partners() {
           Our Partners
         </h2>
 
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-x-10 gap-y-8">
           {PARTNERS.map((partner) => (
             <PartnerLogo key={partner.name} name={partner.name} logo={partner.logo} />
           ))}
