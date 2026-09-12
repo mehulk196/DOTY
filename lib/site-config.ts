@@ -44,18 +44,27 @@ export const AWARDS = [
   "Internship & Placement Opportunities",
 ] as const;
 
+// Organizing bodies presenting the event, shown above the partners grid.
+export const PRESENTERS = [
+  { name: "Fashion Design Council of Rajasthan", logo: "fdcr.jpg" },
+  {
+    name: "Ministry of Skill Development and Entrepreneurship",
+    logo: "ministry-skill-development.svg",
+  },
+] as const;
+
 // Drop each partner's logo file into public/partners/ using the `logo`
-// filename below (transparent PNG or SVG, ~400px wide is plenty). Until a
-// file exists, Partners.tsx falls back to a text badge automatically.
+// filename below. Until a file exists, Partners.tsx falls back to a text
+// badge automatically.
 export const PARTNERS = [
   { name: "Skill India", logo: "skill-india.png" },
-  { name: "Skill Rajasthan", logo: "skill-rajasthan.png" },
-  { name: "RSLDC", logo: "rsldc.png" },
-  { name: "Amity University Rajasthan", logo: "amity-university.png" },
-  { name: "Colours of Fusion", logo: "colours-of-fusion.png" },
-  { name: "RCCI", logo: "rcci.png" },
-  { name: "Jaipur Utsav", logo: "jaipur-utsav.png" },
-  { name: "SEWA", logo: "sewa.png" },
+  { name: "Skill Rajasthan", logo: "skill-rajasthan.jpg" },
+  { name: "RSLDC", logo: "rsldc.jpg" },
+  { name: "Amity University Rajasthan", logo: "amity-university.jpg" },
+  { name: "Colours of Fusion", logo: "colours-of-fusion.jpg" },
+  { name: "RCCI", logo: "rcci.jpg" },
+  { name: "Jaipur Utsav", logo: "jaipur-utsav.jpg" },
+  { name: "SEWA Bharat", logo: "sewa.webp" },
 ] as const;
 
 export const NAV_LINKS = [
