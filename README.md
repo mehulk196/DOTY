@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Designer of the Year (doty.in)
 
-## Getting Started
+Marketing site for **Designer of the Year**, a World Cotton Day Celebration
+competition presented by the Fashion Design Council of Rajasthan (FDCR) for
+fashion, textile & design students across Rajasthan.
 
-First, run the development server:
+Built with Next.js (App Router) + Tailwind CSS v4.
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Before going live: set up the Google Form
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The **Register Now** button links to a Google Form. Create one at
+[forms.google.com](https://forms.google.com) with these fields:
 
-## Learn More
+1. Full Name (short answer, required)
+2. Email Address (short answer, required, validated as email)
+3. Phone Number (short answer, required)
+4. College / Institute Name (short answer, required)
+5. City (short answer, required)
+6. Category (multiple choice, required):
+   - Fashion Design
+   - Textile Design
+   - Sustainable Design
+   - Creative Innovation
+7. Year / Course (short answer)
+8. Portfolio / Instagram / Work Sample Link (short answer)
+9. A short note about your entry (paragraph, optional)
 
-To learn more about Next.js, take a look at the following resources:
+Once created, click **Send** → the link icon → copy the short `forms.gle`
+link, then paste it into [`lib/site-config.ts`](lib/site-config.ts) as
+`googleFormUrl`. That single constant powers every "Register" link/button
+on the site.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Editing content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+All event copy (dates, venue, categories, awards, partners, contact email)
+lives in [`lib/site-config.ts`](lib/site-config.ts) — update it there rather
+than hunting through components.
 
-## Deploy on Vercel
+## Deploying
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push this repo to GitHub.
+2. Import the repo in [Vercel](https://vercel.com/new).
+3. Add `doty.in` as a custom domain in the Vercel project's Domains settings
+   and point your domain's DNS at Vercel per its instructions.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Every push to `main` redeploys automatically once the Vercel project is
+connected.
