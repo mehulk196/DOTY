@@ -44,15 +44,18 @@ export const AWARDS = [
   "Internship & Placement Opportunities",
 ] as const;
 
+// Drop each partner's logo file into public/partners/ using the `logo`
+// filename below (transparent PNG or SVG, ~400px wide is plenty). Until a
+// file exists, Partners.tsx falls back to a text badge automatically.
 export const PARTNERS = [
-  "Skill India",
-  "Skill Rajasthan",
-  "RSLDC",
-  "Amity University Rajasthan",
-  "Colours of Fusion",
-  "RCCI",
-  "Jaipur Utsav",
-  "SEWA",
+  { name: "Skill India", logo: "skill-india.png" },
+  { name: "Skill Rajasthan", logo: "skill-rajasthan.png" },
+  { name: "RSLDC", logo: "rsldc.png" },
+  { name: "Amity University Rajasthan", logo: "amity-university.png" },
+  { name: "Colours of Fusion", logo: "colours-of-fusion.png" },
+  { name: "RCCI", logo: "rcci.png" },
+  { name: "Jaipur Utsav", logo: "jaipur-utsav.png" },
+  { name: "SEWA", logo: "sewa.png" },
 ] as const;
 
 export const NAV_LINKS = [

@@ -17,16 +17,43 @@ export default function Icon() {
           borderRadius: 6,
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            fontSize: 15,
-            fontWeight: 900,
-            fontFamily: "serif",
-            color: "#d9b25c",
-          }}
-        >
-          DY
+        <div style={{ position: "relative", width: 20, height: 20, display: "flex" }}>
+          <div
+            style={{
+              position: "absolute",
+              left: 3,
+              top: 5,
+              width: 9,
+              height: 9,
+              borderRadius: "50%",
+              backgroundColor: "#d9b25c",
+              display: "flex",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              left: 11,
+              top: 5,
+              width: 9,
+              height: 9,
+              borderRadius: "50%",
+              backgroundColor: "#d9b25c",
+              display: "flex",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              left: 7,
+              top: 0,
+              width: 9,
+              height: 9,
+              borderRadius: "50%",
+              backgroundColor: "#d9b25c",
+              display: "flex",
+            }}
+          />
         </div>
       </div>
     ),

@@ -22,8 +22,47 @@ export default function Image() {
           padding: 64,
         }}
       >
+        <div style={{ position: "relative", width: 44, height: 34, display: "flex" }}>
+          <div
+            style={{
+              position: "absolute",
+              left: 6,
+              top: 10,
+              width: 20,
+              height: 20,
+              borderRadius: "50%",
+              backgroundColor: "#d9b25c",
+              display: "flex",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              left: 24,
+              top: 10,
+              width: 20,
+              height: 20,
+              borderRadius: "50%",
+              backgroundColor: "#d9b25c",
+              display: "flex",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              left: 15,
+              top: 0,
+              width: 20,
+              height: 20,
+              borderRadius: "50%",
+              backgroundColor: "#d9b25c",
+              display: "flex",
+            }}
+          />
+        </div>
         <div
           style={{
+            marginTop: 18,
             fontSize: 22,
             letterSpacing: 6,
             textTransform: "uppercase",

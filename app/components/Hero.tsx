@@ -1,4 +1,5 @@
 import { SITE } from "@/lib/site-config";
+import { CottonBranch } from "@/app/components/BackgroundArt";
 
 export default function Hero() {
   return (
@@ -9,6 +10,11 @@ export default function Hero() {
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(179,135,47,0.12),transparent_45%),radial-gradient(circle_at_80%_0%,rgba(22,50,31,0.10),transparent_40%)]"
+      />
+      <CottonBranch className="pointer-events-none absolute -left-6 -top-4 hidden h-64 w-56 opacity-70 sm:block" />
+      <CottonBranch
+        flip
+        className="pointer-events-none absolute -right-6 bottom-0 hidden h-64 w-56 opacity-70 sm:block"
       />
 
       <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
@@ -33,7 +39,7 @@ export default function Hero() {
           For Fashion, Textile &amp; Design Students
         </p>
 
-        <p className="mt-6 font-script text-2xl text-gold sm:text-3xl">
+        <p className="mt-6 font-display text-2xl italic text-gold sm:text-3xl">
           {SITE.tagline}
         </p>
 

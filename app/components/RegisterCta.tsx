@@ -1,9 +1,11 @@
 import { SITE } from "@/lib/site-config";
+import { ThreadSwirl } from "@/app/components/BackgroundArt";
 
 export default function RegisterCta() {
   return (
     <section id="register" className="border-b border-gold/20 px-6 py-24">
-      <div className="mx-auto max-w-2xl rounded-3xl border border-gold/30 bg-cream-dark/60 px-8 py-14 text-center shadow-sm">
+      <div className="relative mx-auto max-w-2xl overflow-hidden rounded-3xl border border-gold/30 bg-cream-dark/60 px-8 py-14 text-center shadow-sm">
+        <ThreadSwirl className="pointer-events-none absolute -right-4 -top-4 h-28 w-28 opacity-80" />
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
           Registrations open
         </p>

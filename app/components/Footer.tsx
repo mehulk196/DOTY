@@ -1,13 +1,12 @@
 import { SITE } from "@/lib/site-config";
+import Logo from "@/app/components/Logo";
 
 export default function Footer() {
   return (
     <footer className="mt-auto bg-ink px-6 py-10 text-cream/70">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
         <div>
-          <p className="font-display text-lg font-bold text-cream">
-            {SITE.shortName}
-          </p>
+          <Logo className="justify-center text-cream sm:justify-start" />
           <p className="mt-1 text-xs">
             {SITE.organizer} ({SITE.organizerShort})
           </p>

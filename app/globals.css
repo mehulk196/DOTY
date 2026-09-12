@@ -18,8 +18,7 @@
   --color-forest-light: var(--forest-light);
   --color-gold: var(--gold);
   --color-gold-light: var(--gold-light);
-  --font-display: var(--font-playfair);
-  --font-script: var(--font-dancing);
+  --font-display: var(--font-bodoni);
   --font-sans: var(--font-inter);
 }
 

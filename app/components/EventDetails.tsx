@@ -77,7 +77,7 @@ export default function EventDetails() {
           ))}
         </div>
 
-        <p className="mx-auto mt-14 max-w-2xl text-center font-script text-2xl text-gold-light">
+        <p className="mx-auto mt-14 max-w-2xl text-center font-display text-2xl italic text-gold-light">
           Be Part of a Movement. Be the Change.
         </p>
         <p className="mt-3 text-center text-xs font-semibold uppercase tracking-[0.35em] text-cream/70">
