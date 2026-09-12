@@ -3,7 +3,7 @@ import { WeaveTexture } from "@/app/components/BackgroundArt";
 
 export default function About() {
   return (
-    <section id="about" className="relative overflow-hidden border-b border-gold/20 px-6 py-20">
+    <section id="about" className="relative overflow-hidden border-b border-gold/20 px-6 py-14 sm:py-20">
       <WeaveTexture className="pointer-events-none absolute inset-0 -z-10 h-full w-full text-forest/[0.04]" />
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">

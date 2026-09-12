@@ -3,8 +3,8 @@ import { ThreadSwirl } from "@/app/components/BackgroundArt";
 
 export default function RegisterCta() {
   return (
-    <section id="register" className="border-b border-gold/20 px-6 py-24">
-      <div className="relative mx-auto max-w-2xl overflow-hidden rounded-3xl border border-gold/30 bg-cream-dark/60 px-8 py-14 text-center shadow-sm">
+    <section id="register" className="border-b border-gold/20 px-6 py-16 sm:py-24">
+      <div className="relative mx-auto max-w-2xl overflow-hidden rounded-3xl border border-gold/30 bg-cream-dark/60 px-6 py-10 text-center shadow-sm sm:px-8 sm:py-14">
         <ThreadSwirl className="pointer-events-none absolute -right-4 -top-4 h-28 w-28 opacity-80" />
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
           Registrations open
@@ -20,7 +20,7 @@ export default function RegisterCta() {
           href={SITE.googleFormUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-8 inline-block rounded-full bg-forest px-10 py-4 text-base font-semibold text-cream shadow-lg shadow-forest/25 transition hover:bg-forest-light"
+          className="mt-8 inline-block whitespace-nowrap rounded-full bg-forest px-6 py-4 text-sm font-semibold text-cream shadow-lg shadow-forest/25 transition hover:bg-forest-light sm:px-10 sm:text-base"
         >
           Register via Google Form
         </a>

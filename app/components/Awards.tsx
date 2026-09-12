@@ -2,7 +2,7 @@ import { AWARDS } from "@/lib/site-config";
 
 export default function Awards() {
   return (
-    <section id="awards" className="border-b border-gold/20 px-6 py-20">
+    <section id="awards" className="border-b border-gold/20 px-6 py-14 sm:py-20">
       <div className="mx-auto max-w-4xl text-center">
         <div className="flex items-center justify-center gap-4">
           <span className="h-px w-12 bg-gold/50" />

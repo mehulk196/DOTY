@@ -29,7 +29,7 @@ const ICONS: Record<string, ReactNode> = {
 
 export default function Categories() {
   return (
-    <section id="categories" className="border-b border-gold/20 bg-cream-dark/60 px-6 py-20">
+    <section id="categories" className="border-b border-gold/20 bg-cream-dark/60 px-6 py-14 sm:py-20">
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
@@ -40,25 +40,25 @@ export default function Categories() {
           </h2>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-6 lg:grid-cols-4">
           {CATEGORIES.map((cat) => (
             <div
               key={cat.title}
-              className="flex flex-col items-center rounded-2xl border border-gold/25 bg-cream px-6 py-10 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              className="flex flex-col items-center rounded-2xl border border-gold/25 bg-cream px-4 py-6 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:px-6 sm:py-10"
             >
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={1.5}
-                className="h-10 w-10 text-gold"
+                className="h-7 w-7 text-gold sm:h-10 sm:w-10"
               >
                 {ICONS[cat.title]}
               </svg>
-              <h3 className="mt-5 font-display text-lg font-bold text-forest">
+              <h3 className="mt-3 font-display text-base font-bold text-forest sm:mt-5 sm:text-lg">
                 {cat.title}
               </h3>
-              <p className="mt-2 text-sm text-ink/65">{cat.tagline}</p>
+              <p className="mt-1.5 text-xs text-ink/65 sm:mt-2 sm:text-sm">{cat.tagline}</p>
             </div>
           ))}
         </div>

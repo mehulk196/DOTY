@@ -4,7 +4,7 @@ import { hasPartnerLogo } from "@/lib/logos";
 export default function PartnerLogo({
   name,
   logo,
-  className = "h-24 w-44",
+  className = "h-16 w-28 sm:h-24 sm:w-44",
 }: {
   name: string;
   logo: string;

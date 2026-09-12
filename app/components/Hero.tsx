@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden border-b border-gold/20 px-6 pb-20 pt-16 sm:pt-24"
+      className="relative overflow-hidden border-b border-gold/20 px-6 pb-14 pt-10 sm:pb-20 sm:pt-24"
     >
       <div
         aria-hidden
@@ -28,7 +28,7 @@ export default function Hero() {
           Celebration
         </p>
 
-        <p className="mt-8 text-sm font-medium uppercase tracking-[0.2em] text-ink/60">
+        <p className="mt-6 text-sm font-medium uppercase tracking-[0.2em] text-ink/60 sm:mt-8">
           {SITE.organizer} presents
         </p>
         <h2 className="mt-3 font-display text-5xl font-black leading-[0.95] text-forest sm:text-7xl">
@@ -43,22 +43,22 @@ export default function Hero() {
           {SITE.tagline}
         </p>
 
-        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
+        <div className="mt-8 flex w-full flex-col items-center gap-3 sm:mt-10 sm:w-auto sm:flex-row sm:gap-4">
           <a
             href="#register"
-            className="rounded-full bg-forest px-8 py-3.5 text-sm font-semibold text-cream shadow-lg shadow-forest/20 transition hover:bg-forest-light"
+            className="w-full rounded-full bg-forest px-8 py-3.5 text-center text-sm font-semibold text-cream shadow-lg shadow-forest/20 transition hover:bg-forest-light sm:w-auto"
           >
             Register Now
           </a>
           <a
             href="#details"
-            className="rounded-full border border-forest/30 px-8 py-3.5 text-sm font-semibold text-forest transition hover:bg-forest/5"
+            className="w-full rounded-full border border-forest/30 px-8 py-3.5 text-center text-sm font-semibold text-forest transition hover:bg-forest/5 sm:w-auto"
           >
             Event Details
           </a>
         </div>
 
-        <dl className="mt-14 grid w-full max-w-2xl grid-cols-1 gap-6 border-t border-gold/20 pt-8 text-left sm:grid-cols-3">
+        <dl className="mt-10 grid w-full max-w-2xl grid-cols-1 gap-4 border-t border-gold/20 pt-6 text-left sm:mt-14 sm:grid-cols-3 sm:gap-6 sm:pt-8">
           <div>
             <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">
               Date

@@ -40,7 +40,7 @@ export default function EventDetails() {
   return (
     <section
       id="details"
-      className="border-b border-gold/20 bg-forest px-6 py-20 text-cream"
+      className="border-b border-gold/20 bg-forest px-6 py-14 text-cream sm:py-20"
     >
       <div className="mx-auto max-w-5xl">
         <div className="text-center">
@@ -52,11 +52,11 @@ export default function EventDetails() {
           </h2>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:mt-12 sm:grid-cols-3 sm:gap-8">
           {DETAILS.map((d) => (
             <div
               key={d.label}
-              className="flex flex-col items-center rounded-2xl border border-cream/15 bg-cream/5 px-6 py-8 text-center"
+              className="flex flex-col items-center rounded-2xl border border-cream/15 bg-cream/5 px-6 py-6 text-center sm:py-8"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -77,7 +77,7 @@ export default function EventDetails() {
           ))}
         </div>
 
-        <p className="mx-auto mt-14 max-w-2xl text-center font-display text-2xl italic text-gold-light">
+        <p className="mx-auto mt-10 max-w-2xl text-center font-display text-2xl italic text-gold-light sm:mt-14">
           Be Part of a Movement. Be the Change.
         </p>
         <p className="mt-3 text-center text-xs font-semibold uppercase tracking-[0.35em] text-cream/70">
