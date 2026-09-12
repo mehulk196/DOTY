@@ -1,4 +1,4 @@
-# Designer of the Year (doty.in)
+# Designer of the Year (doty.co.in)
 
 Marketing site for **Designer of the Year**, a World Cotton Day Celebration
 competition presented by the Fashion Design Council of Rajasthan (FDCR) for
@@ -49,7 +49,7 @@ than hunting through components.
 
 1. Push this repo to GitHub.
 2. Import the repo in [Vercel](https://vercel.com/new).
-3. Add `doty.in` as a custom domain in the Vercel project's Domains settings
+3. Add `doty.co.in` as a custom domain in the Vercel project's Domains settings
    and point your domain's DNS at Vercel per its instructions.
 
 Every push to `main` redeploys automatically once the Vercel project is
