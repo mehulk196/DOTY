@@ -13,7 +13,7 @@ export default function Presenters() {
             key={presenter.name}
             name={presenter.name}
             logo={presenter.logo}
-            className="h-9 w-24 sm:h-16 sm:w-40"
+            className="h-9 sm:h-16"
           />
         ))}
       </div>

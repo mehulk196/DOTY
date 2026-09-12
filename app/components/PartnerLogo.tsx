@@ -1,10 +1,9 @@
-import Image from "next/image";
 import { hasPartnerLogo } from "@/lib/logos";
 
 export default function PartnerLogo({
   name,
   logo,
-  className = "h-16 w-28 sm:h-24 sm:w-44",
+  className = "h-16 sm:h-24",
 }: {
   name: string;
   logo: string;
@@ -18,15 +17,16 @@ export default function PartnerLogo({
     );
   }
 
+  // Plain <img> (not next/image) because height-based sizing needs each
+  // logo's natural aspect ratio, which next/image can't infer without
+  // per-file width/height.
   return (
-    <div className={`flex items-center justify-center ${className}`} title={name}>
-      <Image
-        src={`/partners/${logo}`}
-        alt={name}
-        width={280}
-        height={160}
-        className="h-full w-full object-contain"
-      />
-    </div>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={`/partners/${logo}`}
+      alt={name}
+      title={name}
+      className={`w-auto max-w-[160px] object-contain sm:max-w-[240px] ${className}`}
+    />
   );
 }
