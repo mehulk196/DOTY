@@ -13,8 +13,8 @@ export const SITE = {
   participants: "Fashion, Textile & Design students from across Rajasthan",
   contactEmail: "info@doty.co.in",
   instagramUrl: "https://instagram.com/",
-  // TODO: replace with the real Google Form link once created (see README for the field list).
-  googleFormUrl: "https://forms.gle/REPLACE-WITH-YOUR-FORM-LINK",
+  googleFormUrl:
+    "https://docs.google.com/forms/d/e/1FAIpQLSfBgD2BllXSrxbDxaFymZVRCutdWPeR_J6Nm89pcWKEpc5rcA/viewform?usp=publish-editor",
 } as const;
 
 export const CATEGORIES = [
