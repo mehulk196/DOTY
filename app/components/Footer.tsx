@@ -16,14 +16,6 @@ export default function Footer() {
           <p>
             {SITE.eventDateLabel} &middot; {SITE.venue}
           </p>
-          <p className="mt-1">
-            <a
-              href={`mailto:${SITE.contactEmail}`}
-              className="underline underline-offset-2 hover:text-cream"
-            >
-              {SITE.contactEmail}
-            </a>
-          </p>
         </div>
 
         <p className="text-xs text-cream/50">

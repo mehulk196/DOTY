@@ -25,13 +25,7 @@ export default function RegisterCta() {
           Register via Google Form
         </a>
         <p className="mt-4 text-xs text-ink/50">
-          Deadline and full terms will be shared on confirmation. Queries:{" "}
-          <a
-            href={`mailto:${SITE.contactEmail}`}
-            className="font-semibold text-forest underline underline-offset-2"
-          >
-            {SITE.contactEmail}
-          </a>
+          Deadline and full terms will be shared on confirmation.
         </p>
       </div>
     </section>

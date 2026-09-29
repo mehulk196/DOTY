@@ -11,7 +11,6 @@ export const SITE = {
   eventDateISO: "2026-10-07",
   venue: "Rajasthan Chamber of Commerce, Jaipur",
   participants: "Fashion, Textile & Design students from across Rajasthan",
-  contactEmail: "info@doty.co.in",
   instagramUrl: "https://instagram.com/",
   googleFormUrl:
     "https://docs.google.com/forms/d/e/1FAIpQLSfBgD2BllXSrxbDxaFymZVRCutdWPeR_J6Nm89pcWKEpc5rcA/viewform?usp=publish-editor",
