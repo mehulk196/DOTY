@@ -4,7 +4,7 @@ import { INTERIOR_INITIATIVE, INTERIOR_SUPPORTER, INTERIOR_SITE } from "@/lib/in
 export default function InteriorPresentedBand() {
   return (
     <div className="border-b border-gold/20 bg-cream-dark/50 px-4 py-4 sm:px-6 sm:py-6">
-      <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-center gap-x-10 gap-y-2 sm:justify-between">
+      <div className="mx-auto flex max-w-5xl flex-wrap items-start justify-center gap-x-10 gap-y-3 sm:justify-between">
         <div className="flex flex-col items-center gap-1 sm:items-start">
           <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-ink/50 sm:text-[11px]">
             An initiative of
