@@ -1,15 +1,19 @@
 export default function Logo({
   className = "",
   wordmark = true,
+  iconClassName = "h-8 w-8",
+  textClassName = "text-xl",
 }: {
   className?: string;
   wordmark?: boolean;
+  iconClassName?: string;
+  textClassName?: string;
 }) {
   return (
     <span className={`inline-flex items-center gap-2.5 ${className}`}>
       <svg
         viewBox="0 0 40 40"
-        className="h-8 w-8 shrink-0"
+        className={`shrink-0 ${iconClassName}`}
         fill="none"
         aria-hidden
       >
@@ -33,7 +37,7 @@ export default function Logo({
         </g>
       </svg>
       {wordmark && (
-        <span className="font-display text-xl font-bold tracking-tight">
+        <span className={`font-display font-bold tracking-tight ${textClassName}`}>
           DOTY
         </span>
       )}

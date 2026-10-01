@@ -15,7 +15,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const description = `${SITE.organizer} presents Designer of the Year — a ${SITE.occasion} competition for fashion, textile & design students across Rajasthan. ${SITE.tagline}`;
+const description = `${SITE.organizer} presents ${SITE.name} — a ${SITE.occasion} celebration recognizing emerging creative talent across Rajasthan. ${SITE.tagline}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `${SITE.name} | ${SITE.organizerShort}`,
-    description: `Showcase your talent. Shape the future. A ${SITE.occasion} competition for fashion, textile & design students — ${SITE.eventDateLabel}, ${SITE.venue}.`,
+    description,
     url: SITE.url,
     siteName: SITE.name,
     locale: "en_IN",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `${SITE.name} | ${SITE.organizerShort}`,
-    description: `Showcase your talent. Shape the future. ${SITE.eventDateLabel} at ${SITE.venue}.`,
+    description,
   },
 };
 
