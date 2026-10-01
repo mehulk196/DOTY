@@ -57,7 +57,7 @@ export function getInteriorEventJsonLd() {
     },
     organizer: {
       "@type": "Organization",
-      name: INTERIOR_SITE.organizer,
+      name: INTERIOR_SITE.associatedWith,
       url: SITE.url,
     },
     url: `${SITE.url}/interior-design`,

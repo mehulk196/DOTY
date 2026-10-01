@@ -8,7 +8,7 @@ export const INTERIOR_SITE = {
     "Calling all Architecture & Interior Design students across Rajasthan to create a contemporary pavilion that reflects the heritage, culture, craftsmanship and future of Rajasthan.",
   opportunity:
     "Your design could become an opportunity to represent Rajasthan at an international platform — IITF Delhi.",
-  initiativeLine: "An initiative by FDCR, supported by RAJSICO",
+  initiativeLine: "An initiative by RAJSICO, supported by FDCR",
   organizer: "Fashion Design Council of Rajasthan",
   organizerShort: "FDCR",
   associatedWith: "RAJSICO",
@@ -50,10 +50,13 @@ export const ELIGIBLE_DISCIPLINES = [
   "Related design disciplines",
 ] as const;
 
-export const INTERIOR_PRESENTERS = [
-  { name: "Fashion Design Council of Rajasthan", logo: "fdcr.png" },
-  { name: "RAJSICO", logo: "rajsico.png" },
-] as const;
+// RAJSICO initiates Raj Aakar; FDCR supports it. Order matters for the
+// "An initiative of / Supported by" banner.
+export const INTERIOR_INITIATIVE = { name: "RAJSICO", logo: "rajsico.png" } as const;
+export const INTERIOR_SUPPORTER = {
+  name: "Fashion Design Council of Rajasthan",
+  logo: "fdcr.png",
+} as const;
 
 export const INTERIOR_NAV_LINKS = [
   { label: "Awards", href: "#awards" },

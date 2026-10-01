@@ -3,7 +3,7 @@ import { INTERIOR_SITE, INTERIOR_BENEFITS, SUBMISSION_ITEMS } from "@/lib/interi
 export const INTERIOR_FAQS = [
   {
     question: `What is ${INTERIOR_SITE.name} — Designer of the Year?`,
-    answer: `${INTERIOR_SITE.name} is a state-level design competition — an initiative by ${INTERIOR_SITE.organizerShort}, supported by ${INTERIOR_SITE.associatedWith} — inviting Architecture and Interior Design students to design a contemporary pavilion inspired by Rajasthan's heritage, culture and craftsmanship.`,
+    answer: `${INTERIOR_SITE.name} is a state-level design competition — an initiative by ${INTERIOR_SITE.associatedWith}, supported by ${INTERIOR_SITE.organizerShort} — inviting Architecture and Interior Design students to design a contemporary pavilion inspired by Rajasthan's heritage, culture and craftsmanship.`,
   },
   {
     question: "Who can participate?",
