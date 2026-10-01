@@ -7,8 +7,8 @@ export const SITE = {
   url: "https://doty.co.in",
   tagline: "Showcase Your Talent. Shape The Future.",
   occasion: "World Cotton Day Celebration",
-  eventDateLabel: "7th October 2026",
-  eventDateISO: "2026-10-07",
+  eventDateLabel: "19th October 2026",
+  eventDateISO: "2026-10-19",
   venue: "Rajasthan Chamber of Commerce, Jaipur",
   participants: "Fashion, Textile & Design students from across Rajasthan",
   instagramUrl: "https://instagram.com/",
@@ -36,11 +36,17 @@ export const CATEGORIES = [
 ] as const;
 
 export const AWARDS = [
-  "Exciting Cash Prizes",
-  "Trophies & Certificates",
-  "Featured Showcase at World Cotton Day Celebration",
-  "Industry Recognition & Exposure",
-  "Internship & Placement Opportunities",
+  "Prestige & Recognition",
+  "Certification",
+  "Portfolio Building",
+  "Industry Exposure",
+  "Industry Networking",
+  "Career Opportunities",
+  "Media Visibility",
+  "Mentorship",
+  "National Exposure",
+  "Future Opportunities",
+  "Designer of the Year Title",
 ] as const;
 
 // Organizing bodies presenting the event, shown above the partners grid.
@@ -53,17 +59,27 @@ export const PRESENTERS = [
 ] as const;
 
 // Drop each partner's logo file into public/partners/ using the `logo`
-// filename below. Until a file exists, Partners.tsx falls back to a text
+// filename below. Until a file exists, PartnerLogo falls back to a text
 // badge automatically.
-export const PARTNERS = [
-  { name: "Skill India", logo: "skill-india.png" },
-  { name: "Skill Rajasthan", logo: "skill-rajasthan.png" },
-  { name: "RSLDC", logo: "rsldc.png" },
-  { name: "Amity University Rajasthan", logo: "amity-university.png" },
-  { name: "Colours of Fusion", logo: "colours-of-fusion.png" },
-  { name: "RCCI", logo: "rcci.png" },
-  { name: "Jaipur Utsav", logo: "jaipur-utsav.png" },
-  { name: "SEWA", logo: "sewa.png" },
+export const PARTNER_GROUPS = [
+  {
+    label: "Government & Skill Development Partners",
+    partners: [
+      { name: "Skill India", logo: "skill-india.png" },
+      { name: "Skill Rajasthan", logo: "skill-rajasthan.png" },
+      { name: "RSLDC", logo: "rsldc.png" },
+    ],
+  },
+  {
+    label: "Industry & Institutional Partners",
+    partners: [
+      { name: "Amity University Rajasthan", logo: "amity-university.png" },
+      { name: "Colours of Fusion", logo: "colours-of-fusion.png" },
+      { name: "RCCI", logo: "rcci.png" },
+      { name: "Jaipur Utsav", logo: "jaipur-utsav.png" },
+      { name: "SEWA", logo: "sewa.png" },
+    ],
+  },
 ] as const;
 
 export const NAV_LINKS = [
