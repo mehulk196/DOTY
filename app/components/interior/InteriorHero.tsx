@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { INTERIOR_SITE } from "@/lib/interior-config";
 import { ArchMotif } from "@/app/components/BackgroundArt";
 
@@ -21,15 +22,14 @@ export default function InteriorHero() {
         <p className="text-xs font-semibold uppercase tracking-[0.35em] text-gold">
           {INTERIOR_SITE.eyebrow}
         </p>
-        <h1 className="mt-3 font-display text-5xl font-black uppercase tracking-tight text-forest sm:text-7xl">
-          {INTERIOR_SITE.name}
-        </h1>
-        <p className="mt-2 inline-block rounded-full border border-gold/40 bg-cream-dark/50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-ink/70 sm:text-sm">
-          Designer of the Year (DOTY) 2026
-        </p>
-        <p className="mt-4 font-display text-2xl italic text-gold sm:text-3xl">
-          {INTERIOR_SITE.tagline}
-        </p>
+        <Image
+          src="/interior/raj-aakar-logo.webp"
+          alt={`${INTERIOR_SITE.fullName} — ${INTERIOR_SITE.tagline}`}
+          width={1605}
+          height={980}
+          priority
+          className="mt-4 h-auto w-full max-w-sm sm:max-w-xl"
+        />
         <p className="mt-4 text-sm font-semibold uppercase tracking-[0.25em] text-ink/70 sm:text-base">
           Architecture &amp; Interior Design
         </p>
