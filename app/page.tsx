@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Logo from "@/app/components/Logo";
 import { CottonBranch } from "@/app/components/BackgroundArt";
 import { SITE } from "@/lib/site-config";
 
@@ -15,7 +14,7 @@ const TRACKS = [
   {
     label: "Interior Design",
     href: "/interior-design",
-    variant: "outline" as const,
+    variant: "solid" as const,
     icon: (
       <path
         d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4M3 10h18v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6ZM6 18v2M18 18v2"
@@ -39,20 +38,12 @@ export default function Home() {
         className="pointer-events-none absolute -right-6 bottom-0 hidden h-64 w-56 opacity-70 sm:block"
       />
 
-      <div className="flex items-center justify-center gap-5 sm:gap-8">
-        <Logo
-          wordmark={false}
-          iconClassName="h-12 w-12 sm:h-16 sm:w-16"
-          className="text-forest"
-        />
-        <span className="font-display text-2xl italic text-gold/50 sm:text-3xl">
-          &amp;
-        </span>
+      <div className="flex items-center justify-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/partners/fdcr.png"
           alt={SITE.organizer}
-          className="h-12 w-auto object-contain sm:h-16"
+          className="h-20 w-auto object-contain sm:h-28"
         />
       </div>
 

@@ -70,6 +70,96 @@ export function WeaveTexture({ className = "" }: { className?: string }) {
   );
 }
 
+export function ArchMotif({
+  className = "",
+  flip = false,
+}: {
+  className?: string;
+  flip?: boolean;
+}) {
+  return (
+    <svg
+      viewBox="0 0 220 260"
+      className={className}
+      style={flip ? { transform: "scaleX(-1)" } : undefined}
+      fill="none"
+      aria-hidden
+    >
+      <path
+        d="M30 250V140C30 95 55 65 90 55C125 65 150 95 150 140V250"
+        stroke="currentColor"
+        strokeWidth="2"
+        className="text-forest/35"
+      />
+      <path
+        d="M48 250V148C48 112 65 88 90 80C115 88 132 112 132 148V250"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        className="text-gold/40"
+      />
+      <circle cx="90" cy="48" r="5" fill="currentColor" className="text-gold-light/70" />
+      {[75, 90, 105].map((x, i) => (
+        <circle
+          key={i}
+          cx={x}
+          cy={70 - Math.abs(x - 90) * 0.6}
+          r="2.5"
+          fill="currentColor"
+          className="text-gold-light/60"
+        />
+      ))}
+    </svg>
+  );
+}
+
+export function JaliLattice({ className = "" }: { className?: string }) {
+  const id = "doty-jali";
+  return (
+    <svg className={className} aria-hidden xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern
+          id={id}
+          width="26"
+          height="26"
+          patternUnits="userSpaceOnUse"
+        >
+          <path
+            d="M13 1 L25 13 L13 25 L1 13 Z"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1"
+          />
+          <circle cx="13" cy="13" r="2" fill="none" stroke="currentColor" strokeWidth="1" />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill={`url(#${id})`} />
+    </svg>
+  );
+}
+
+export function CompassAccent({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 200 200" className={className} fill="none" aria-hidden>
+      <path
+        d="M170 50A60 60 0 0 1 110 110"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        className="text-gold/50"
+      />
+      <path
+        d="M150 30 170 50 150 70M190 50H140"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="text-gold/45"
+      />
+      <circle cx="170" cy="50" r="4" fill="currentColor" className="text-gold/60" />
+    </svg>
+  );
+}
+
 export function ThreadSwirl({ className = "" }: { className?: string }) {
   return (
     <svg viewBox="0 0 200 200" className={className} fill="none" aria-hidden>

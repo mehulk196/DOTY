@@ -1,7 +1,11 @@
 import { SITE } from "@/lib/site-config";
 import Logo from "@/app/components/Logo";
 
-export default function Footer() {
+export default function Footer({
+  meta = `${SITE.eventDateLabel} · ${SITE.venue}`,
+}: {
+  meta?: string;
+}) {
   return (
     <footer className="mt-auto bg-ink px-6 py-10 text-cream/70">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
@@ -13,9 +17,7 @@ export default function Footer() {
         </div>
 
         <div className="text-xs">
-          <p>
-            {SITE.eventDateLabel} &middot; {SITE.venue}
-          </p>
+          <p>{meta}</p>
         </div>
 
         <p className="text-xs text-cream/50">

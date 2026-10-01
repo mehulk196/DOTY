@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
-import FashionLanding from "@/app/components/FashionLanding";
+import InteriorLanding from "@/app/components/InteriorLanding";
 import { SITE } from "@/lib/site-config";
+import { INTERIOR_SITE } from "@/lib/interior-config";
 
-// TEMPORARY: Interior Design has no content of its own yet, so this route
-// reuses the Fashion page verbatim as a placeholder. Replace
-// <FashionLanding /> below with real Interior Design content/components
-// once materials are provided, and drop the noindex + canonical override.
+const description = `${INTERIOR_SITE.organizer} presents ${INTERIOR_SITE.fullName}, in association with ${INTERIOR_SITE.associatedWith} — a Rajasthan-level design competition for Architecture & Interior Design students. ${INTERIOR_SITE.headline}`;
+
 export const metadata: Metadata = {
-  title: { absolute: `${SITE.name} | ${SITE.organizerShort}` },
+  title: { absolute: `${INTERIOR_SITE.fullName} | ${INTERIOR_SITE.organizerShort}` },
+  description,
   alternates: {
-    canonical: `${SITE.url}/fashion`,
+    canonical: `${SITE.url}/interior-design`,
   },
-  robots: {
-    index: false,
-    follow: true,
+  openGraph: {
+    title: `${INTERIOR_SITE.fullName} | ${INTERIOR_SITE.organizerShort}`,
+    description,
+    url: `${SITE.url}/interior-design`,
   },
 };
 
 export default function InteriorDesignPage() {
-  return <FashionLanding />;
+  return <InteriorLanding />;
 }

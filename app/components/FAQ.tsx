@@ -1,10 +1,12 @@
 import { FAQS } from "@/lib/faq";
 import { getFaqJsonLd, jsonLdScriptProps } from "@/lib/jsonld";
 
-export default function FAQ() {
+type Faq = { question: string; answer: string };
+
+export default function FAQ({ faqs = FAQS }: { faqs?: readonly Faq[] }) {
   return (
     <section id="faq" className="border-b border-gold/20 px-6 py-14 sm:py-20">
-      <script {...jsonLdScriptProps(getFaqJsonLd())} />
+      <script {...jsonLdScriptProps(getFaqJsonLd(faqs))} />
       <div className="mx-auto max-w-3xl">
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
@@ -16,7 +18,7 @@ export default function FAQ() {
         </div>
 
         <div className="mt-10 divide-y divide-gold/20 border-y border-gold/20">
-          {FAQS.map((faq) => (
+          {faqs.map((faq) => (
             <details key={faq.question} className="group py-5">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-semibold text-ink marker:content-none">
                 {faq.question}

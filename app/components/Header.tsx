@@ -5,7 +5,15 @@ import Link from "next/link";
 import { NAV_LINKS, SITE } from "@/lib/site-config";
 import Logo from "@/app/components/Logo";
 
-export default function Header() {
+type NavLink = { label: string; href: string };
+
+export default function Header({
+  navLinks = NAV_LINKS,
+  registerHref = "#register",
+}: {
+  navLinks?: readonly NavLink[];
+  registerHref?: string;
+}) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -19,7 +27,7 @@ export default function Header() {
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {NAV_LINKS.map((link) => (
+          {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -29,7 +37,7 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="#register"
+            href={registerHref}
             className="rounded-full bg-forest px-5 py-2 text-sm font-semibold text-cream transition hover:bg-forest-light"
           >
             Register Now
@@ -61,7 +69,7 @@ export default function Header() {
       {open && (
         <div className="border-t border-gold/20 bg-cream px-6 py-4 md:hidden">
           <nav className="flex flex-col gap-4">
-            {NAV_LINKS.map((link) => (
+            {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -72,7 +80,7 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="#register"
+              href={registerHref}
               onClick={() => setOpen(false)}
               className="rounded-full bg-forest px-5 py-2 text-center text-sm font-semibold text-cream"
             >

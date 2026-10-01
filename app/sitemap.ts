@@ -15,7 +15,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
-    // /interior-design is excluded until it has real content of its own —
-    // it currently noindex-mirrors /fashion (see app/interior-design/page.tsx).
+    {
+      url: `${SITE.url}/interior-design`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
   ];
 }

@@ -1,5 +1,6 @@
 import { SITE } from "@/lib/site-config";
 import { FAQS } from "@/lib/faq";
+import { INTERIOR_SITE } from "@/lib/interior-config";
 
 export function getOrganizationJsonLd() {
   return {
@@ -40,11 +41,34 @@ export function getEventJsonLd() {
   };
 }
 
-export function getFaqJsonLd() {
+export function getInteriorEventJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: INTERIOR_SITE.fullName,
+    description: `${INTERIOR_SITE.organizer} presents ${INTERIOR_SITE.fullName}, in association with ${INTERIOR_SITE.associatedWith} — a Rajasthan-level design competition for Architecture & Interior Design students. ${INTERIOR_SITE.headline}`,
+    endDate: INTERIOR_SITE.submissionDeadlineISO,
+    eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+    eventStatus: "https://schema.org/EventScheduled",
+    image: [`${SITE.url}/opengraph-image`],
+    location: {
+      "@type": "VirtualLocation",
+      url: `${SITE.url}/interior-design`,
+    },
+    organizer: {
+      "@type": "Organization",
+      name: INTERIOR_SITE.organizer,
+      url: SITE.url,
+    },
+    url: `${SITE.url}/interior-design`,
+  };
+}
+
+export function getFaqJsonLd(faqs: readonly { question: string; answer: string }[] = FAQS) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: FAQS.map((faq) => ({
+    mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: {
