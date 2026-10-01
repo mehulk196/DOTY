@@ -22,10 +22,17 @@ export const INTERIOR_SITE = {
 } as const;
 
 export const INTERIOR_BENEFITS = [
-  "Raj Aakar Award",
-  "Certificate of Recognition",
-  "National Level Recognition",
-  "Portfolio & Industry Exposure",
+  "Prestige & Recognition",
+  "Certification",
+  "Portfolio Building",
+  "Industry Exposure",
+  "Industry Networking",
+  "Career Opportunities",
+  "Media Visibility",
+  "Mentorship",
+  "National Exposure",
+  "Future Opportunities",
+  "Designer of the Year Title",
 ] as const;
 
 export const SUBMISSION_ITEMS = [
