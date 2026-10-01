@@ -8,6 +8,18 @@ const description = `${INTERIOR_SITE.organizer} presents ${INTERIOR_SITE.fullNam
 export const metadata: Metadata = {
   title: { absolute: `${INTERIOR_SITE.fullName} | ${INTERIOR_SITE.organizerShort}` },
   description,
+  keywords: [
+    "Raj Aakar",
+    "Designer of the Year",
+    "DOTY",
+    "FDCR",
+    "RAJSICO",
+    "Fashion Design Council of Rajasthan",
+    "architecture competition Rajasthan",
+    "interior design competition Rajasthan",
+    "Rajasthan design competition students",
+    "architecture student competition India",
+  ],
   alternates: {
     canonical: `${SITE.url}/interior-design`,
   },
