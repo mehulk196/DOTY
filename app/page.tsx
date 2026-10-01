@@ -4,7 +4,7 @@ import { SITE } from "@/lib/site-config";
 
 const TRACKS = [
   {
-    label: "Fashion",
+    label: "Fashion & Textile Design",
     href: "/fashion",
     variant: "solid" as const,
     icon: (
@@ -12,7 +12,7 @@ const TRACKS = [
     ),
   },
   {
-    label: "Interior Design",
+    label: "Architecture & Interior Design",
     href: "/interior-design",
     variant: "solid" as const,
     icon: (
