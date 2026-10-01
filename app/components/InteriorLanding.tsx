@@ -1,7 +1,6 @@
 import Header from "@/app/components/Header";
 import Presenters from "@/app/components/Presenters";
 import InteriorHero from "@/app/components/interior/InteriorHero";
-import InteriorAbout from "@/app/components/interior/InteriorAbout";
 import InteriorCategories from "@/app/components/interior/InteriorCategories";
 import InteriorBenefits from "@/app/components/interior/InteriorBenefits";
 import InteriorSubmission from "@/app/components/interior/InteriorSubmission";
@@ -22,7 +21,6 @@ export default function InteriorLanding() {
       <Presenters presenters={INTERIOR_PRESENTERS} />
       <main>
         <InteriorHero />
-        <InteriorAbout />
         <InteriorCategories />
         <InteriorBenefits />
         <InteriorSubmission />

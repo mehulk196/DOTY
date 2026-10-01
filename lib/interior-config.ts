@@ -61,21 +61,12 @@ export const ELIGIBLE_DISCIPLINES = [
   "Related design disciplines",
 ] as const;
 
-// How FDCR and RAJSICO will run the competition together.
-export const EXECUTION_POINTS = [
-  "Online registration and submission of design concept + mood board.",
-  "Outreach to leading Architecture and Interior Design colleges/universities across Rajasthan for student participation.",
-  "Promotion through FDCR’s institutional, creative and social media network.",
-  "Recognition/certification for selected participants and winners.",
-] as const;
-
 export const INTERIOR_PRESENTERS = [
   { name: "Fashion Design Council of Rajasthan", logo: "fdcr.png" },
   { name: "RAJSICO", logo: "rajsico.png" },
 ] as const;
 
 export const INTERIOR_NAV_LINKS = [
-  { label: "About", href: "#about" },
   { label: "Categories", href: "#categories" },
   { label: "Awards", href: "#awards" },
   { label: "Submission", href: "#submission" },
