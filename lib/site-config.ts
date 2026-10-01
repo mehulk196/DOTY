@@ -49,6 +49,18 @@ export const AWARDS = [
   "Designer of the Year Title",
 ] as const;
 
+// Shown above the headline on the homepage track-chooser.
+export const HOMEPAGE_LOGOS = [
+  { name: "Fashion Design Council of Rajasthan", logo: "fdcr.png" },
+  {
+    name: "Ministry of Skill Development and Entrepreneurship",
+    logo: "ministry-skill-development.svg",
+  },
+  { name: "RAJSICO", logo: "rajsico.png" },
+  { name: "Skill Rajasthan", logo: "skill-rajasthan.png" },
+  { name: "Skill India", logo: "skill-india.png" },
+] as const;
+
 // Organizing bodies presenting the event, shown above the partners grid.
 export const PRESENTERS = [
   { name: "Fashion Design Council of Rajasthan", logo: "fdcr.png" },

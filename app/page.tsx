@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CottonBranch } from "@/app/components/BackgroundArt";
-import { SITE } from "@/lib/site-config";
+import PartnerLogo from "@/app/components/PartnerLogo";
+import { SITE, HOMEPAGE_LOGOS } from "@/lib/site-config";
 
 const TRACKS = [
   {
@@ -38,13 +39,15 @@ export default function Home() {
         className="pointer-events-none absolute -right-6 bottom-0 hidden h-64 w-56 opacity-70 sm:block"
       />
 
-      <div className="flex items-center justify-center">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/partners/fdcr.png"
-          alt={SITE.organizer}
-          className="h-20 w-auto object-contain sm:h-28"
-        />
+      <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 sm:gap-x-10">
+        {HOMEPAGE_LOGOS.map((item) => (
+          <PartnerLogo
+            key={item.name}
+            name={item.name}
+            logo={item.logo}
+            className="h-10 sm:h-14"
+          />
+        ))}
       </div>
 
       <h1 className="mt-10 font-display text-4xl font-black leading-[0.95] text-forest sm:text-6xl">
