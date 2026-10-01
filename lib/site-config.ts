@@ -72,10 +72,10 @@ export const PRESENTERS = [
 
 // Drop each partner's logo file into public/partners/ using the `logo`
 // filename below. Until a file exists, PartnerLogo falls back to a text
-// badge automatically.
+// badge automatically. Each group renders as its own standalone section.
 export const PARTNER_GROUPS = [
   {
-    label: "Government & Skill Development Partners",
+    heading: "In Association With",
     partners: [
       { name: "Skill India", logo: "skill-india.png" },
       { name: "Skill Rajasthan", logo: "skill-rajasthan.png" },
@@ -83,7 +83,7 @@ export const PARTNER_GROUPS = [
     ],
   },
   {
-    label: "Industry & Institutional Partners",
+    heading: "Our Partners",
     partners: [
       { name: "Amity University Rajasthan", logo: "amity-university.png" },
       { name: "Colours of Fusion", logo: "colours-of-fusion.png" },

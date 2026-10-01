@@ -1,30 +1,49 @@
 # Designer of the Year (DOTY)
 
-> Designer of the Year is a competition held on the occasion of World Cotton
-> Day Celebration, presented by the Fashion Design Council of Rajasthan
-> (FDCR), for fashion, textile & design students from across Rajasthan,
-> India.
+> Designer of the Year (DOTY) is an umbrella brand covering two design
+> competitions presented by the Fashion Design Council of Rajasthan (FDCR):
+> a Fashion & Textile Design track and an Architecture & Interior Design
+> track ("Raj Aakar"). The homepage lets visitors choose a track.
 
-## Key facts
+## Pages
+
+- [Homepage](https://doty.co.in): minimal track-chooser — links to the
+  Fashion and Interior Design pages below.
+- [Fashion & Textile Design](https://doty.co.in/fashion): full event
+  details, categories, awards, partners, and FAQ for the Fashion track.
+- [Architecture & Interior Design — Raj Aakar](https://doty.co.in/interior-design):
+  full event details, categories, awards, submission requirements, and FAQ
+  for the Interior Design track.
+
+## Fashion & Textile Design track
 
 - Event name: Designer of the Year (DOTY)
 - Organizer: Fashion Design Council of Rajasthan (FDCR)
 - Occasion: World Cotton Day Celebration
-- Date: 7th October 2026
+- Date: 19th October 2026
 - Venue: Rajasthan Chamber of Commerce, Jaipur, Rajasthan, India
 - Eligible participants: Fashion, Textile & Design students from across Rajasthan
 - Categories: Fashion Design, Textile Design, Sustainable Design, Creative Innovation
-- Awards: Cash prizes, trophies & certificates, featured showcase at the
-  World Cotton Day Celebration, industry recognition & exposure, and
-  internship & placement opportunities
-- Presented in association with: Ministry of Skill Development and
-  Entrepreneurship, Skill India, Skill Rajasthan, RSLDC, Amity University
-  Rajasthan, Colours of Fusion, RCCI, Jaipur Utsav, and SEWA
-- Registration: via the "Register Now" button on the official website,
-  which links to a Google Form
-- Official website: https://doty.co.in
+- Awards: Prestige & Recognition, Certification, Portfolio Building, Industry
+  Exposure, Industry Networking, Career Opportunities, Media Visibility,
+  Mentorship, National Exposure, Future Opportunities, Designer of the Year Title
+- In association with: Skill India, Skill Rajasthan, RSLDC
+- Partners: Amity University Rajasthan, Colours of Fusion, RCCI, Jaipur
+  Utsav, SEWA
+- Registration: via the "Register Now" button, which links to a Google Form
 
-## Pages
+## Architecture & Interior Design track (Raj Aakar)
 
-- [Homepage](https://doty.co.in): full event details, categories, awards,
-  partners, and FAQ.
+- Event name: Raj Aakar — Designer of the Year (DOTY) 2026
+- An initiative by RAJSICO, supported by FDCR
+- Theme: The Shape of Rajasthan
+- Submission deadline: 18th October 2026
+- Eligible participants: Architecture & Interior Design students from
+  colleges and universities across Rajasthan, individually or in teams
+- Categories: Architecture, Interior Design
+- Opportunity: international platform — IITF Delhi
+- Registration: via the "Register Now" button, which links to a Google Form
+
+## Official website
+
+https://doty.co.in
