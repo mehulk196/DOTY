@@ -46,7 +46,7 @@ export function getInteriorEventJsonLd() {
     "@context": "https://schema.org",
     "@type": "Event",
     name: INTERIOR_SITE.fullName,
-    description: `${INTERIOR_SITE.organizer} presents ${INTERIOR_SITE.fullName}, in association with ${INTERIOR_SITE.associatedWith} — a Rajasthan-level design competition for Architecture & Interior Design students. ${INTERIOR_SITE.headline}`,
+    description: `${INTERIOR_SITE.fullName} — ${INTERIOR_SITE.initiativeLine}, a state-level design competition for Architecture & Interior Design students. ${INTERIOR_SITE.headline}`,
     endDate: INTERIOR_SITE.submissionDeadlineISO,
     eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
     eventStatus: "https://schema.org/EventScheduled",

@@ -2,13 +2,6 @@ import type { ReactNode } from "react";
 import { INTERIOR_BENEFITS } from "@/lib/interior-config";
 
 const ICONS: Record<string, ReactNode> = {
-  "Cash Prize": (
-    <path
-      d="M4 8h12v8H4zM8 12h4M16 10h4v6h-4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  ),
   "Raj Aakar Award": (
     <path
       d="M8 4h8v4a4 4 0 0 1-8 0V4ZM6 5H4v2a4 4 0 0 0 4 4M18 5h2v2a4 4 0 0 1-4 4M10 14v3h4v-3M8 20h8"
@@ -51,7 +44,7 @@ export default function InteriorBenefits() {
           <span className="h-px w-12 bg-gold/50" />
         </div>
 
-        <div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-5 sm:gap-4">
+        <div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-4">
           {INTERIOR_BENEFITS.map((benefit) => (
             <div key={benefit} className="flex flex-col items-center gap-2">
               <svg

@@ -33,6 +33,9 @@ export default function InteriorHero() {
         <p className="mt-4 text-sm font-semibold uppercase tracking-[0.25em] text-ink/70 sm:text-base">
           Architecture &amp; Interior Design
         </p>
+        <p className="mt-2 text-xs font-medium uppercase tracking-[0.2em] text-ink/50 sm:text-sm">
+          {INTERIOR_SITE.initiativeLine}
+        </p>
 
         <h2 className="mt-6 font-display text-3xl font-black leading-tight text-ink sm:text-5xl">
           {INTERIOR_SITE.headline}
@@ -81,7 +84,7 @@ export default function InteriorHero() {
               Opportunity
             </dt>
             <dd className="mt-1 font-display text-lg font-semibold text-ink">
-              National Platform in Delhi
+              International Platform — IITF Delhi
             </dd>
           </div>
         </dl>

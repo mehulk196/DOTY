@@ -2,12 +2,13 @@ export const INTERIOR_SITE = {
   name: "Raj Aakar",
   fullName: "Raj Aakar — Designer of the Year (DOTY) 2026",
   tagline: "The Shape of Rajasthan",
-  eyebrow: "A Rajasthan-Level Design Competition",
+  eyebrow: "A State-Level Design Competition",
   headline: "Design Rajasthan. Represent Rajasthan.",
   intro:
     "Calling all Architecture & Interior Design students across Rajasthan to create a contemporary pavilion that reflects the heritage, culture, craftsmanship and future of Rajasthan.",
   opportunity:
-    "Your design could become an opportunity to represent Rajasthan on a national platform in Delhi.",
+    "Your design could become an opportunity to represent Rajasthan at an international platform — IITF Delhi.",
+  initiativeLine: "An initiative by FDCR, supported by RAJSICO",
   organizer: "Fashion Design Council of Rajasthan",
   organizerShort: "FDCR",
   associatedWith: "RAJSICO",
@@ -20,19 +21,7 @@ export const INTERIOR_SITE = {
   googleFormUrl: "https://forms.gle/REPLACE-WITH-YOUR-INTERIOR-FORM-LINK",
 } as const;
 
-export const INTERIOR_CATEGORIES = [
-  {
-    title: "Architecture",
-    tagline: "Shape heritage into form.",
-  },
-  {
-    title: "Interior Design",
-    tagline: "Craft spaces with identity.",
-  },
-] as const;
-
 export const INTERIOR_BENEFITS = [
-  "Cash Prize",
   "Raj Aakar Award",
   "Certificate of Recognition",
   "National Level Recognition",
@@ -67,7 +56,6 @@ export const INTERIOR_PRESENTERS = [
 ] as const;
 
 export const INTERIOR_NAV_LINKS = [
-  { label: "Categories", href: "#categories" },
   { label: "Awards", href: "#awards" },
   { label: "Submission", href: "#submission" },
   { label: "FAQ", href: "#faq" },

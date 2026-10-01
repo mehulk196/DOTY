@@ -3,7 +3,7 @@ import InteriorLanding from "@/app/components/InteriorLanding";
 import { SITE } from "@/lib/site-config";
 import { INTERIOR_SITE } from "@/lib/interior-config";
 
-const description = `${INTERIOR_SITE.organizer} presents ${INTERIOR_SITE.fullName}, in association with ${INTERIOR_SITE.associatedWith} — a Rajasthan-level design competition for Architecture & Interior Design students. ${INTERIOR_SITE.headline}`;
+const description = `${INTERIOR_SITE.fullName} — ${INTERIOR_SITE.initiativeLine}, a state-level design competition for Architecture & Interior Design students. ${INTERIOR_SITE.headline}`;
 
 export const metadata: Metadata = {
   title: { absolute: `${INTERIOR_SITE.fullName} | ${INTERIOR_SITE.organizerShort}` },

@@ -1,7 +1,6 @@
 import Header from "@/app/components/Header";
 import Presenters from "@/app/components/Presenters";
 import InteriorHero from "@/app/components/interior/InteriorHero";
-import InteriorCategories from "@/app/components/interior/InteriorCategories";
 import InteriorBenefits from "@/app/components/interior/InteriorBenefits";
 import InteriorSubmission from "@/app/components/interior/InteriorSubmission";
 import FAQ from "@/app/components/FAQ";
@@ -12,7 +11,7 @@ import { INTERIOR_FAQS } from "@/lib/interior-faq";
 import { getInteriorEventJsonLd, jsonLdScriptProps } from "@/lib/jsonld";
 
 // Raj Aakar — Designer of the Year (DOTY) 2026, the Architecture & Interior
-// Design track, presented by FDCR in association with RAJSICO.
+// Design track. An initiative by FDCR, supported by RAJSICO.
 export default function InteriorLanding() {
   return (
     <>
@@ -21,7 +20,6 @@ export default function InteriorLanding() {
       <Presenters presenters={INTERIOR_PRESENTERS} />
       <main>
         <InteriorHero />
-        <InteriorCategories />
         <InteriorBenefits />
         <InteriorSubmission />
         <FAQ faqs={INTERIOR_FAQS} />
