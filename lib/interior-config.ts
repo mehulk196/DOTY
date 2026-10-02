@@ -17,8 +17,8 @@ export const INTERIOR_SITE = {
   participants:
     "Architecture & Interior Design students from colleges and universities across Rajasthan",
   closingTagline: "Your Design. Your Identity. Your Rajasthan.",
-  // TODO: replace with the real Google Form link once created.
-  googleFormUrl: "https://forms.gle/REPLACE-WITH-YOUR-INTERIOR-FORM-LINK",
+  googleFormUrl:
+    "https://docs.google.com/forms/d/e/1FAIpQLSdYVM9yr0uS_ZIiUirkWOUo4eYMSTxiXcMtGVxLeCV3MaNtmA/viewform",
 } as const;
 
 export const INTERIOR_BENEFITS = [
