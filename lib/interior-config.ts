@@ -7,7 +7,7 @@ export const INTERIOR_SITE = {
   intro:
     "Calling all Architecture & Interior Design students across Rajasthan to create a contemporary pavilion that reflects the heritage, culture, craftsmanship and future of Rajasthan.",
   opportunity:
-    "Your design could become an opportunity to represent Rajasthan at an international platform — IITF Delhi.",
+    "Your design could become an opportunity to represent Rajasthan at an international platform — IITF 2026, New Delhi.",
   initiativeLine: "An initiative by RAJSICO, supported by FDCR",
   organizer: "Fashion Design Council of Rajasthan",
   organizerShort: "FDCR",
@@ -29,10 +29,8 @@ export const INTERIOR_BENEFITS = [
   "Industry Networking",
   "Career Opportunities",
   "Media Visibility",
-  "Mentorship",
   "National Exposure",
   "Future Opportunities",
-  "Designer of the Year Title",
 ] as const;
 
 export const SUBMISSION_ITEMS = [

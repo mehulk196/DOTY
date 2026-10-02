@@ -51,7 +51,7 @@ export default function InteriorHero() {
           href="/interior-design/iitf-pavilion-reference"
           className="mt-3 text-[21px] font-semibold text-forest underline decoration-gold/50 underline-offset-2 transition hover:decoration-forest"
         >
-          Click here: IITF Pavillion Video Reference
+          IITF and other Pavillion videos for Reference
         </Link>
 
         <div className="mt-8 flex w-full flex-col items-center gap-3 sm:mt-10 sm:w-auto sm:flex-row sm:gap-4">
@@ -91,7 +91,7 @@ export default function InteriorHero() {
               Opportunity
             </dt>
             <dd className="mt-1 font-display text-lg font-semibold text-ink">
-              International Platform — IITF Delhi
+              International Platform — IITF 2026, New Delhi
             </dd>
           </div>
         </dl>
