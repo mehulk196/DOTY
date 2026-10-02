@@ -49,9 +49,9 @@ export default function InteriorHero() {
         </p>
         <Link
           href="/interior-design/iitf-pavilion-reference"
-          className="mt-3 text-sm font-semibold text-forest underline decoration-gold/50 underline-offset-2 transition hover:decoration-forest"
+          className="mt-3 text-[21px] font-semibold text-forest underline decoration-gold/50 underline-offset-2 transition hover:decoration-forest"
         >
-          IITF Pavillion Video Reference
+          Click here: IITF Pavillion Video Reference
         </Link>
 
         <div className="mt-8 flex w-full flex-col items-center gap-3 sm:mt-10 sm:w-auto sm:flex-row sm:gap-4">

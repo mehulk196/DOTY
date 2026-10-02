@@ -14,8 +14,8 @@ export const FAQS = [
     answer: `There are four categories: ${CATEGORIES.map((c) => c.title).join(", ")}.`,
   },
   {
-    question: `When and where is ${SITE.shortName} ${new Date(SITE.eventDateISO).getFullYear()} held?`,
-    answer: `The event takes place on ${SITE.eventDateLabel} at ${SITE.venue}.`,
+    question: `When and where is ${SITE.shortName} ${new Date(SITE.eventStartDateISO).getFullYear()} held?`,
+    answer: `The event runs ${SITE.eventDateLabel} at ${SITE.venue}.`,
   },
   {
     question: "How do I register for Designer of the Year?",
