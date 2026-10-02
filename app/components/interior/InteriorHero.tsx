@@ -51,7 +51,7 @@ export default function InteriorHero() {
           href="/interior-design/rajasthan-pavilion"
           className="mt-3 text-[21px] font-semibold text-forest underline decoration-gold/50 underline-offset-2 transition hover:decoration-forest"
         >
-          Click here: Rajasthan Pavilion IITF 2026 — Concept Note &amp; Layout
+          Click Here: IITF Pavilion Designing Guidelines
         </Link>
         <Link
           href="/interior-design/iitf-pavilion-reference"
